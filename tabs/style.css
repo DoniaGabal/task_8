@@ -1,0 +1,40 @@
+.tabs {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.tab-header {
+    display: flex;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+.tab:hover{
+    color: blue;
+}
+.tab:after{
+    content: "";
+    display: block;
+    width: 0;
+height: 3px;
+background-color: #0c0c90;
+transition: width 0.5s;
+border-radius: 25px;
+}
+.tab:hover:after{
+    width: 100%;
+    }
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.tab-content.show {
+    display: block;
+}
